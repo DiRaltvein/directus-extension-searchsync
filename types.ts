@@ -13,6 +13,7 @@ export type CollectionConfig = {
 	indexName?: string;
 	fields?: string[];
 	filter?: Filter;
+	preventImplicitDelete?: boolean;
 	transform?: (input: object, utils: Record<string, Function>, collectionName: string) => object;
 };
 
